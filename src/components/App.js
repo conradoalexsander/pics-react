@@ -22,6 +22,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container" style={{ marginTop: "10px" }}>
+
+        {/* props are passed to the children component, so it can use its values or functions */}
+        
         <SearchBar onSubmit={this.onSearchSubmit} />
         <ImageList images={this.state.images} />
       </div>
